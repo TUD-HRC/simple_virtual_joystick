@@ -1,5 +1,7 @@
 # simple_virtual_joystick
 
+ROS2 publisher
+
 For when a real controller is just too far away from your desk.   
 2D axis, horizontal slider, and vertical slider, publishing on a twist/twiststamped topic  
 I (AI) did it because I needed to control x, y, yaw, and altitude of a drone (i.e., 4 DOF), and there was not something available.
