@@ -1,4 +1,5 @@
 from glob import glob
+
 from setuptools import find_packages, setup
 
 package_name = 'simple_virtual_joystick'
@@ -17,7 +18,7 @@ setup(
     zip_safe=True,
     maintainer='Davide Torielli',
     maintainer_email='toridebraus@gmail.com',
-    description='Simple virtual joystick to publish a twist by mean of your mouse',
+    description='Simple virtual joystick to publish a twist by means of your mouse',
     license='Apache-2.0',
     extras_require={
         'test': [
@@ -26,7 +27,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'simple_virtual_joystick = simple_virtual_joystick.simple_virtual_joystick:main'
+            'simple_virtual_joystick = simple_virtual_joystick.simple_virtual_joystick:main',
+            'virtual_joystick = simple_virtual_joystick.simple_virtual_joystick:main',
         ],
     },
 )
