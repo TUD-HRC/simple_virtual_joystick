@@ -197,6 +197,9 @@ class VirtualJoystick:
         if self._stopped:
             return
 
+        #to get sim time, otherwise when using sim time the stamp will stay to zero
+        rclpy.spin_once(self.node, timeout_sec=0.0)
+
         twist_msg = Twist()
         twist_msg.linear.x = self.x
         twist_msg.linear.y = self.y
